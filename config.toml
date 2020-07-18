@@ -1,5 +1,6 @@
 baseurl = "/"
-languageCode = "en-us"
+defaultContentLanguage = "ja"
+languageCode = "ja"
 theme = "hello-friend"
 paginate = 5
 enableGitInfo = true
@@ -27,7 +28,7 @@ enableGitInfo = true
   # rssFullText = true
 
 [languages]
-  [languages.en]
+  [languages.ja]
     title = "Kontrex"
     subtitle = "輪読会Blog"
     keywords = ""
@@ -43,7 +44,7 @@ enableGitInfo = true
     dateFormatSingle = "2006-01-02 15:04"
     dateFormatList = "2006-01-02 15:04"
 
-    [languages.en.params.logo]
+    [languages.ja.params.logo]
       logoText = "Kontrex"
       logoHomeLink = "/"
     # or
@@ -51,12 +52,12 @@ enableGitInfo = true
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
+    [languages.ja.menu]
+      [[languages.ja.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
-      [[languages.en.menu.main]]
+      [[languages.ja.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
