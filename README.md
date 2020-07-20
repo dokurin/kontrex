@@ -10,6 +10,12 @@
 brew install hugo
 ```
 
+Add a Theme
+```console
+cd ./kontrex
+git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
+```
+
 ### 2. Start Server
 
 ```console
