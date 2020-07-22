@@ -8,6 +8,11 @@ cd kontrex
 docker-compose up
 ```
 
+If docker-compose is fail. Check `which docker-compose`. Sometimes `docker` but `python`. When python's, 
+```
+pip uninstall docker-compose
+```
+
 ### For without Docker
 #### 1. Install Hugo
 If you are Apple funboy.
