@@ -1,28 +1,43 @@
 # kontrex
 
 ## Quick Start
+### For Docker user
+```
+git clone --recursive https://github.com/dokurin/kontrex.git
+cd kontrex
+docker-compose up
+```
 
-<!-- NOTE(ryutah): ローカルサーバ起動/ビルド用Dockerイメージを修正したら要修正 -->
-
-### 1. Install Hugo
-
+### For without Docker
+#### 1. Install Hugo
+If you are Apple funboy.
 ```console
 brew install hugo
 ```
 
-Add a Theme
+If you use Windows. 
+
+1. Download zip [from here](https://github.com/gohugoio/hugo/releases) and unzip.
+1. Edit environment variable `PATH` like `c:¥{download-directory}/hugo_v.xx.x`
+
+Next, clone source code from git.
+```
+git clone --recursive https://github.com/dokurin/kontrex.git
+```
+
+If you forget to clone with `--recursive` option.
 ```console
 cd ./kontrex
 git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
-### 2. Start Server
+#### 2. Start Server
 
 ```console
 hugo serve -D
 ```
 
-### 3. Access Local Server
+#### 3. Access Local Server
 
 ```console
 open http://localhost:1313
