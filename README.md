@@ -8,7 +8,7 @@ cd kontrex
 docker-compose up
 ```
 
-If docker-compose is fail. Check `which docker-compose`. Sometimes `docker` but `python`. When python's, 
+If docker-compose is fail. Check `which docker-compose`. Sometimes run with not `docker` but `python`. When python's, 
 ```
 pip uninstall docker-compose
 ```
