@@ -2,14 +2,14 @@
 
 ## Quick Start
 ### For Docker user
-```
+```console
 git clone --recursive https://github.com/dokurin/kontrex.git
 cd kontrex
 docker-compose up
 ```
 
 If docker-compose is fail. Check `which docker-compose`. Sometimes run with not `docker` but `python`. When python's, 
-```
+```console
 pip uninstall docker-compose
 ```
 
@@ -26,7 +26,7 @@ If you use Windows.
 1. Edit environment variable `PATH` like `c:¥{download-directory}/hugo_v.xx.x`
 
 Next, clone source code from git.
-```
+```console
 git clone --recursive https://github.com/dokurin/kontrex.git
 ```
 
