@@ -1,0 +1,17 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - command: hugo server -D --baseURL=$(gp url 1313) --appendPort=false
+  - openMode: split-right
+    command: echo SplitTerminal
+  - openIn: left
+    command: echo LeftPanelTerminal
+
+vscode:
+  extensions:
+    - DavidAnson.vscode-markdownlint@0.36.1:qV04OEElMWIf9PHKK19GYA==
+
+ports:
+  - port: 1313
+    onOpen: open-preview
