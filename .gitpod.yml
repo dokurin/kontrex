@@ -4,9 +4,7 @@ image:
 tasks:
   - command: hugo server -D --baseURL=$(gp url 1313) --appendPort=false
   - openMode: split-right
-    command: echo SplitTerminal
-  - openIn: left
-    command: echo LeftPanelTerminal
+    command: echo exec command here
 
 vscode:
   extensions:
