@@ -9,7 +9,6 @@ tags:
   - Go
   - Google Cloud Platform
 author: ryutah
-draft: true # 公開時は削除しよう
 ---
 
 記事のテンプレート

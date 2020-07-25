@@ -118,4 +118,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Firebase
 
+.firebase/
+.firebaserc
