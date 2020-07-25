@@ -2,6 +2,7 @@
 
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dokurin/hugo)](https://hub.docker.com/r/dokurin/hugo)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/dokurin/kontrex)
+[![CircleCI](https://circleci.com/gh/dokurin/kontrex.svg?style=shield)](https://circleci.com/gh/dokurin/kontrex)
 
 ## Quick Start
 ### For Docker user
