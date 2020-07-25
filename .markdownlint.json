@@ -3,7 +3,7 @@
   "no-hard-tabs": false,
   "no-duplicate-heading": false,
   "MD013": {
-    "line_length": 80,
+    "line_length": 150,
     "tables": false,
     "code_blocks": false,
     "headings": false

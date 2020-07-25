@@ -88,11 +88,11 @@ Markdownの書き方のサンプルとしても活用してみてね
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func main() {
-	fmt.Println("Hello World!!")
+    fmt.Println("Hello World!!")
 }
 ```
 ````
@@ -103,11 +103,11 @@ func main() {
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func main() {
-	fmt.Println("Hello World!!")
+    fmt.Println("Hello World!!")
 }
 ```
 

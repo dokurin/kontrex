@@ -6,8 +6,30 @@ executors:
   firebase:
     docker:
       - image: andreysenov/firebase-tools:8.4.1-alpine
+  makdownlint:
+    docker:
+      - image: 06kellyjac/markdownlint-cli:0.22.0-alpine
+  eclint:
+    docker:
+      - image: "odannyc/eclint@sha256:6912a340ba87bdd2f747e678f4075b98dc58f225dcfedbf89dae59ae8adf3427"
 
 jobs:
+  lint_markdown:
+    executor: makdownlint
+    steps:
+      - checkout
+      - run:
+          name: lint markdown
+          command: markdownlint -c .markdownlint.json -i archetypes -i ./content/posts/helloworld .
+
+  lint_editorconfig:
+    executor: eclint
+    steps:
+      - checkout
+      - run:
+          name: lint editorconfig
+          command: eclint check archetypes content README.md Dockerfile script
+
   build:
     executor: hugo
     steps:
@@ -35,7 +57,12 @@ workflows:
   version: 2
   build_and_deploy:
     jobs:
+      - lint_markdown
+      - lint_editorconfig
       - build:
+          requires:
+            - lint_markdown
+            - lint_editorconfig
           filters:
             branches:
               only:

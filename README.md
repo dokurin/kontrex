@@ -5,36 +5,44 @@
 [![CircleCI](https://circleci.com/gh/dokurin/kontrex.svg?style=shield)](https://circleci.com/gh/dokurin/kontrex)
 
 ## Quick Start
+
 ### For Docker user
+
 ```console
 git clone --recursive https://github.com/dokurin/kontrex.git
 cd kontrex
 docker-compose up
 ```
 
-If docker-compose is fail. Check `which docker-compose`. Sometimes run with not `docker` but `python`. When python's, 
+If docker-compose is fail. Check `which docker-compose`. Sometimes run with not `docker` but `python`. When python's,
+
 ```console
 pip uninstall docker-compose
 ```
 
 ### For without Docker
+
 #### 1. Install Hugo
+
 If you are Apple funboy.
+
 ```console
 brew install hugo
 ```
 
-If you use Windows. 
+If you use Windows.
 
 1. Download zip [from here](https://github.com/gohugoio/hugo/releases) and unzip.
 1. Edit environment variable `PATH` like `c:¥{download-directory}/hugo_v.xx.x`
 
 Next, clone source code from git.
+
 ```console
 git clone --recursive https://github.com/dokurin/kontrex.git
 ```
 
 If you forget to clone with `--recursive` option.
+
 ```console
 cd ./kontrex
 git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
