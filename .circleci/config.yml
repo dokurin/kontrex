@@ -12,6 +12,8 @@ jobs:
     executor: hugo
     steps:
       - checkout
+      - run: git submodule sync
+      - run: git submodule update --init
       - run:
           name: build hugo
           command: hugo
@@ -33,7 +35,7 @@ workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - build: &default
+      - build:
           filters:
             branches:
               only:
