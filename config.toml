@@ -57,7 +57,3 @@ enableGitInfo = true
         identifier = "about"
         name = "About"
         url = "/about"
-      [[languages.ja.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
