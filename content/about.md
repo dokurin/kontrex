@@ -1,7 +1,6 @@
 ---
 title: "About"
 date: 2020-08-01T07:14:26Z
-draft: true
 ---
 
 ## 概要
