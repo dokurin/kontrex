@@ -21,6 +21,7 @@ pip uninstall docker-compose
 ```
 
 #### add new Post
+
 ```console
 docker-compose run -e postname={new_post_name} post
 ```
