@@ -5,6 +5,7 @@ description: 見出し
 useRelativeCover: true
 cover: image/sample.png # カバー画像不要の場合は削除する
 tags:
+  - 現場伊藤
   - Hugo
   - Go
   - Google Cloud Platform
