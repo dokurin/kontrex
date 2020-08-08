@@ -12,3 +12,10 @@ services:
       - server
       - --bind=0.0.0.0
       - --buildDrafts
+  post:
+    container_name: post
+    entrypoint: /bin/sh
+    image: dokurin/hugo
+    volumes:
+      - ${PWD}:/src
+    command: /src/script/new_post.sh

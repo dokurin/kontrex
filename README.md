@@ -20,6 +20,11 @@ If docker-compose is fail. Check `which docker-compose`. Sometimes run with not 
 pip uninstall docker-compose
 ```
 
+#### add new Post
+```console
+docker-compose run -e postname={new_post_name} post
+```
+
 ### For without Docker
 
 #### 1. Install Hugo
